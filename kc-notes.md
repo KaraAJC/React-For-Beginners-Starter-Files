@@ -11,6 +11,7 @@ Here's a list of what I've learned so far, and things I've been curious about, t
 
 ## Components:
 components are chunks of reuseable code that are setup to do lots of things, default to prepare a chunk of code to be rendered to the main JS file. 
+if ALL the component is doing is rendering something to the page, and there are no other functions, this would be called a "Stateless Functional Component"
 
 You can look at components that people have made with `React Dev Tools` by navigating to a react-built side and going to the `React` tab. from there, you can inspect a component, often shown by it's `<ComponentName\>` tag
 
@@ -59,3 +60,23 @@ Notes to know about JSX using the above component info:
 ```
 
 ## Props
+how to provide data!
+
+you can pass a prop to an element attribute
+```html
+    <header tagline="catch of the day" age="23" />
+```
+this will show up in `react Dev Tools` as attributes, or "props" of the header component
+
+the render function holds `this.props` where you can call 
+`this.props.tagline` for the above example
+
+to show the props value in JSX, you use {this.props.tagline}
+
+
+
+### Cool-To-Know Notes
+ 
+#### $r in the console
+
+#### $0 in the console
